@@ -23,7 +23,7 @@ CREATE TABLE produtos(
     preco DECIMAL(10,2) NOT NULL,
     quantidade INT NOT NULL,
     categoria_id INT NOT NULL,
-    FOREIGN KEY (categoria_id) REFERENCES categoria(id),
+    FOREIGN KEY (categoria_id) REFERENCES categorias(id),
     ativo BOOLEAN DEFAULT 1
 );
 
@@ -42,8 +42,9 @@ CREATE TABLE itens_pedidos(
 	produto_id INT NOT NULL,
     FOREIGN KEY (produto_id) REFERENCES produtos(id),
     quantidade INT NOT NULL,
-    preco_unitario DECIMAL(10,2)
+    preco_unitario DECIMAL(10,2) NOT NULL
 );
+
 
 
 
