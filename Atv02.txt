@@ -1,0 +1,39 @@
+<--! ATIVIDADE 02 -->
+
+CREATE TABLE clientes(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    telefone VARCHAR(100) NOT NULL,
+    data_nascimento DATETIME NOT NULL,
+    data_cadastro DATE NOT NULL,
+    ativo BOOLEAN DEFAULT 1
+)
+
+CREATE TABLE categorias(
+    id INT AUTO_INCREMENT PRIMARY KEY, 
+    nome VARCHAR(100) NOT NULL,
+    descricao VARCHAR(100)
+)
+
+CREATE TABLE produtos(
+	id INT AUTO_INCREMENT PRIMARY KEY, 
+    nome VARCHAR(100) NOT NULL,
+    descricao VARCHAR(100) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    quantidade INT NOT NULL,
+    categoria_id INT NOT NULL,
+    ativo BOOLEAN DEFAULT 1
+)
+
+CREATE TABLE pedidos(
+	id INT AUTO_INCREMENT PRIMARY KEY, 
+    cliente_id INT NOT NULL,
+    data_pedido DATETIME,
+    valor_total DECIMAL(10,2)
+)
+
+
+
+
+
