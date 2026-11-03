@@ -63,20 +63,19 @@ AULA3(
     ALTER TABLE table_name ADD column_name
     datatype;
 
-    -> Altera a tabela
+    -> Altera a tabela adicionando uma coluna
 
     ALTER TABLE table_name DROP COLUMN column_name
     datatype;
 
-    -> Altera a tabela
+    -> Altera a tabela removendo uma coluna
 
     ALTER TABLE table_name RENAME COLUMN column_name
     datatype;
 
-    -> Altera a tabela
+    -> Altera a tabela renomeando uma coluna
 
     ALTER TABLE table_name ALTER COLUMN column_name
     new_datatype constraint;
 
-    -> Altera a tabela
 );
