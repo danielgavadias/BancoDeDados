@@ -80,9 +80,20 @@ VALUES ('carlos_magno', 'carlosmagno@gmail.com', '+49_241_8392-4105', '0748-04-0
 
 =================================================================================
 
+INSERT INTO categorias(nome, descricao)
+VALUES('c1', 'desc1');
 
+INSERT INTO categorias(nome, descricao)
+VALUES('c2', 'desc2');
 
+INSERT INTO categorias(nome, descricao)
+VALUES('c3', 'desc3');
 
+INSERT INTO categorias(nome, descricao)
+VALUES('c4', 'desc4');
+
+INSERT INTO categorias(nome, descricao)
+VALUES('c5', 'desc5');
 
 
 
