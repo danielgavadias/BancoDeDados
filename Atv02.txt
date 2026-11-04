@@ -44,6 +44,42 @@ CREATE TABLE itens_pedidos(
     quantidade INT NOT NULL,
     preco_unitario DECIMAL(10,2) NOT NULL
 );
+=================================================================================
+
+ALTER TABLE clientes
+MODIFY data_cadastro DATETIME NOT NULL;
+
+ALTER TABLE clientes
+MODIFY data_nascimento DATE NOT NULL;
+
+=================================================================================
+
+INSERT INTO clientes (nome, email, telefone, data_nascimento, data_cadastro) 
+VALUES ('joseph_stalin', 'josephs@gmail.com', '+7_495_90666-0666', '1878-12-18', '2026-10-31 20:40:49');
+
+INSERT INTO clientes (nome, email, telefone, data_nascimento, data_cadastro) 
+VALUES ('fidel_castro', 'fidelcastrado@gmail.com', '+53_7_90676-0696', '1926-08-13', '2026-11-01 18:58:34');
+
+INSERT INTO clientes (nome, email, telefone, data_nascimento, data_cadastro) 
+VALUES ('charles_darwin', 'hmsbeagle1820@gmail.com', '+44_1743_93903-5197', '1809-02-12', '2026-10-01 18:42:07');
+
+INSERT INTO clientes (nome, email, telefone, data_nascimento, data_cadastro) 
+VALUES ('julius_caesar', 'juliobonitao@gmail.com', '+39_06_4829-1044', '0000-07-12', '2026-11-03 20:32:57');
+
+INSERT INTO clientes (nome, email, telefone, data_nascimento, data_cadastro) 
+VALUES ('chico_buarque', 'chicobutico@gmail.com', '+55_21_98412-3075', '1974-07-19', '2026-11-02 19:59:59');
+
+INSERT INTO clientes (nome, email, telefone, data_nascimento, data_cadastro) 
+VALUES ('janio_quadros', 'janiovassourinha@gov.br', '+55_67_99184-2053', '1917-01-25', '2026-11-02 18:12:25');
+
+INSERT INTO clientes (nome, email, telefone, data_nascimento, data_cadastro) 
+VALUES ('josep_oreopesa', 'josep@gmail.com', '+55_41_99200-6397', '2007-08-31', '2026-11-03 20:52:20');
+
+INSERT INTO clientes (nome, email, telefone, data_nascimento, data_cadastro) 
+VALUES ('carlos_magno', 'carlosmagno@gmail.com', '+49_241_8392-4105', '0748-04-02', '2026-10-28 22:14:34');
+
+=================================================================================
+
 
 
 
