@@ -44,7 +44,7 @@ CREATE TABLE itens_pedidos(
     quantidade INT NOT NULL,
     preco_unitario DECIMAL(10,2) NOT NULL
 );
-=================================================================================
+===================================================================================================================================
 
 ALTER TABLE clientes
 MODIFY data_cadastro DATETIME NOT NULL;
@@ -52,7 +52,7 @@ MODIFY data_cadastro DATETIME NOT NULL;
 ALTER TABLE clientes
 MODIFY data_nascimento DATE NOT NULL;
 
-=================================================================================
+===================================================================================================================================
 
 INSERT INTO clientes (nome, email, telefone, data_nascimento, data_cadastro) 
 VALUES
@@ -139,7 +139,28 @@ VALUES
 (1, '2026-11-03 00:00:19', 19.00),
 (3, '2026-11-03 00:00:20', 20.00);
 
+===================================================================================================================================
 
+UPDATE produtos SET preco = 10000 WHERE id = 1;
+UPDATE produtos SET preco = 20000 WHERE id = 2;
+UPDATE produtos SET preco = 30000 WHERE id = 3;
+
+SELECT * FROM produtos WHERE preco > 100;
+SELECT * FROM produtos WHERE preco < 50;
+SELECT * FROM produtos WHERE preco > 500;
+SELECT * FROM produtos WHERE preco > 500;
+SELECT * FROM produtos WHERE ativo = 0;
+SELECT * FROM produtos WHERE preco BETWEEN 100 AND 300;
+SELECT * FROM clientes WHERE ativo = 1 AND nome LIKE 'j%';
+
+SELECT * FROM produtos WHERE nome LIKE 'p%';
+SELECT * FROM produtos WHERE nome LIKE '%1%';
+SELECT * FROM clientes WHERE nome LIKE '%s';
+SELECT * FROM produtos ORDER BY preco ASC;
+SELECT * FROM produtos ORDER BY preco DESC;
+SELECT * FROM produtos ORDER BY nome ASC;
+SELECT * FROM produtos ORDER BY preco DESC LIMIT 5 OFFSET 3;
+SELECT DISTINCT * FROM itens_pedidos ORDER BY preco_unitario ASC LIMIT 1 OFFSET 0;
 
 
 
