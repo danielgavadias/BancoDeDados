@@ -65,7 +65,6 @@ VALUES
 ('josep_oreopesa', 'josep@gmail.com', '+55_41_99200-6397', '2007-08-31', '2026-11-03 20:52:20'),
 ('carlos_magno', 'carlosmagno@gmail.com', '+49_241_8392-4105', '0748-04-02', '2026-10-28 22:14:34');
 
-=================================================================================
 
 INSERT INTO categorias(nome, descricao)
 VALUES
@@ -75,7 +74,6 @@ VALUES
 ('c4', 'desc4'),
 ('c5', 'desc5');
 
-================================================================================
 
 INSERT INTO produtos(nome, descricao, preco, quantidade, categoria_id)
 VALUES
@@ -94,8 +92,6 @@ VALUES
 ('p13', 'desc13', 13.00, 13, 4),
 ('p14', 'desc14', 14.00, 14, 1),
 ('p15', 'desc15', 15.00, 15, 3);
-
-=================================================================================
 
 INSERT INTO itens_pedidos (cliente_id, produto_id, quantidade, preco_unitario)
 VALUES
